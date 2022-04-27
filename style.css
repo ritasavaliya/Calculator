@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.display-container {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    border-radius: 10px;
+    height: 90px;
+    padding: 5px 15px;
+    margin: 0 10px;
+    font-size: 30px;
+    direction: rtl;
+    margin-top: 10px;
+
+}
+
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.btn {
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.div-btn {
+    background-color: green;
+    color: white;
+}
+
+.multiply-btn {
+    background-color: purple;
+    color: white;
+}
+
+.plus-btn {
+    background-color: orange;
+    color: white;
+}
+
+.minus-btn {
+    background-color: skyblue;
+    color: white;
+}
+
+.ac-btn {
+    background-color: red;
+    color: white;
+}
+
+.equal-btn {
+    background-color: blueviolet;
+    color: white;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 150px;
+}
+
+.point-btn {
+    background-color: lightcoral;
+    color: white;
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 150px;
+}
