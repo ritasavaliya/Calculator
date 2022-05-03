@@ -1,9 +1,12 @@
-* {
+* ,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'Digital';
+    src: url(./font/Digital7-1e1Z.ttf);
+ }
 .container {
     display: flex;
     flex-direction: column;
@@ -15,21 +18,37 @@
 .calculator {
     border: 5px solid black;
     border-radius: 10px;
+    width: 380px;
 }
 
 .display-container {
+    font-family: 'Digital';
     border: 2px solid black;
-    box-shadow: 5px 5px 5px #aaaaaa;
+    background-color: #31b33161;
+    box-shadow: 5px 5px 30px #aaaaaa inset;
     border-radius: 10px;
-    height: 90px;
-    padding: 5px 15px;
+    height: 120px;
+    padding: 10px 15px;
     margin: 0 10px;
-    font-size: 30px;
-    direction: rtl;
+    font-size: 45px;
     margin-top: 10px;
-
+    text-align: right;
 }
-
+.calc-innerdisplay {
+    overflow-x: auto;
+}
+.calc-innerdisplay::-webkit-scrollbar{
+    display: none;
+}
+.calc-display {
+    overflow-x: auto;
+}
+.calc-display::-webkit-scrollbar{
+    display: none;
+}
+.calc-display,.calc-innerdisplay{
+    height: 50px;
+}
 .calc-keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -63,30 +82,38 @@
 }
 
 .minus-btn {
-    background-color: skyblue;
+    background-color: #1ec1ff;
     color: white;
 }
 
 .ac-btn {
     background-color: red;
     color: white;
+    height: 40px;
 }
 
 .equal-btn {
     background-color: blueviolet;
     color: white;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    width: 150px;
+     grid-column-start: 1;
+    grid-column-end: 3;
+    width: 160px; 
+    /* grid-row-start: 5;
+    grid-row-end: 7;
+    height: 180px; */
 }
-
-.point-btn {
+.brc-btn {
+    height: 40px;
+    background-color: #4dab59;
+    color: white;
+}
+.per-btn {
     background-color: lightcoral;
     color: white;
 }
 
-.zero {
+/* .zero {
     grid-column-start: 1;
     grid-column-end: 3;
     width: 150px;
-}
+} */
