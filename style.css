@@ -65,7 +65,9 @@
     font-weight: 900;
     box-shadow: 5px 5px 5px #aaaaaa;
 }
-
+.btn:active{
+    transform: translateY(2px);
+}
 .div-btn {
     background-color: green;
     color: white;
